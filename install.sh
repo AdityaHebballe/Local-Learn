@@ -2,7 +2,7 @@
 
 # Move the AppImage to ~/.local/bin
 mkdir -p ~/.local/bin
-mv "Local Learn-1.0.0.AppImage" ~/.local/bin/local-learn
+mv "dist/Local Learn-1.0.0.AppImage" ~/.local/bin/local-learn
 
 # Create the .desktop file
 mkdir -p ~/.local/share/applications
