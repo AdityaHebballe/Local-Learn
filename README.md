@@ -14,6 +14,13 @@ Local Learn is a desktop application that allows you to watch your local course 
 
 ## Getting Started
 
+### For End Users
+
+1.  Download the latest release for your operating system from the [releases page](https://github.com/AdityaHebballe/Local-Learn/releases).
+2.  Run the installer or executable.
+
+### For Developers
+
 1.  **Clone the repository**:
     ```bash
     git clone https://github.com/AdityaHebballe/Local-Learn.git
@@ -21,6 +28,10 @@ Local Learn is a desktop application that allows you to watch your local course 
 2.  **Install dependencies**:
     ```bash
     npm install
+    ```
+3.  **Run the application in development mode**:
+    ```bash
+    npm start
     ```
 
 ## Building the Application
@@ -33,14 +44,27 @@ npm run build
 
 This will create a distributable file in the `dist` directory.
 
-## Running the Application
+## Linux Installation
 
-Once you have built the application, you can run it by double-clicking the executable in the `dist` directory.
+For a better experience on Linux, you can use the provided `install.sh` and `uninstall.sh` scripts.
 
-### Linux Installation
+### Installation
 
-For a better experience on Linux, you can run the `install.sh` script to install the application and add it to your application menu.
+1.  **Build the application**:
+    ```bash
+    npm run build
+    ```
+2.  **Run the installation script**:
+    ```bash
+    ./install.sh
+    ```
+
+This will move the `AppImage` to `~/.local/bin` and create a `.desktop` file in `~/.local/share/applications`, so you can launch "Local Learn" from your application menu.
+
+### Uninstallation
+
+To uninstall the application, run:
 
 ```bash
-./install.sh
+./uninstall.sh
 ```
