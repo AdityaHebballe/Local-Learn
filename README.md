@@ -50,16 +50,15 @@ For a better experience on Linux, you can use the provided `install.sh` and `uni
 
 ### Installation
 
-1.  **Build the application**:
-    ```bash
-    npm run build
-    ```
-2.  **Run the installation script**:
-    ```bash
-    ./install.sh
-    ```
+To install "Local Learn" on Linux, you can run the following commands in your terminal:
 
-This will move the `AppImage` to `~/.local/bin` and create a `.desktop` file in `~/.local/share/applications`, so you can launch "Local Learn" from your application menu.
+```bash
+git clone https://github.com/AdityaHebballe/Local-Learn.git
+cd Local-Learn
+npm install
+npm run build
+./install.sh
+```
 
 ### Uninstallation
 
