@@ -1,8 +1,15 @@
 #!/bin/bash
 
+# Get the latest release URL
+LATEST_RELEASE_URL=$(curl -s https://api.github.com/repos/AdityaHebballe/Local-Learn/releases/latest | grep "browser_download_url.*AppImage" | cut -d : -f 2,3 | tr -d \")
+
+# Download the AppImage
+curl -L -o "Local Learn.AppImage" $LATEST_RELEASE_URL
+chmod +x "Local Learn.AppImage"
+
 # Move the AppImage to ~/.local/bin
 mkdir -p ~/.local/bin
-mv "dist/Local Learn-1.0.0.AppImage" ~/.local/bin/local-learn
+mv "Local Learn.AppImage" ~/.local/bin/local-learn
 
 # Move the icon
 mkdir -p ~/.local/share/icons

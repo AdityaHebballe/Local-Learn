@@ -50,14 +50,10 @@ For a better experience on Linux, you can use the provided `install.sh` and `uni
 
 ### Installation
 
-To install "Local Learn" on Linux, you can run the following commands in your terminal:
+To install "Local Learn" on Linux, simply run the following command in your terminal:
 
 ```bash
-git clone https://github.com/AdityaHebballe/Local-Learn.git
-cd Local-Learn
-npm install
-npm run build
-./install.sh
+curl -sSL https://raw.githubusercontent.com/AdityaHebballe/Local-Learn/main/install.sh | bash
 ```
 
 ### Uninstallation
