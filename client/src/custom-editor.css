@@ -1,0 +1,26 @@
+.ck-editor__main > .ck-editor__editable {
+  background: #181825 !important;
+  color: #cdd6f4 !important;
+  border-color: #313244 !important;
+}
+
+.ck-toolbar {
+  background: #181825 !important;
+  border-color: #313244 !important;
+}
+
+.ck-button,
+.ck-button__label {
+  color: #cdd6f4 !important;
+}
+
+.ck-button:hover,
+.ck-button:focus,
+.ck-button:active {
+  background: #313244 !important;
+}
+
+.ck-dropdown__panel {
+  background: #181825 !important;
+  border-color: #313244 !important;
+}
