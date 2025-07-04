@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Clone the repository
-git clone https://github.com/AdityaHebballe/Local-Learn.git
-cd Local-Learn
-
 # Get the latest release URL
 LATEST_RELEASE_URL=$(curl -s https://api.github.com/repos/AdityaHebballe/Local-Learn/releases/latest | grep "browser_download_url.*AppImage" | cut -d : -f 2,3 | tr -d \")
 
@@ -15,9 +11,8 @@ chmod +x "Local Learn.AppImage"
 mkdir -p ~/.local/bin
 mv "Local Learn.AppImage" ~/.local/bin/local-learn
 
-# Move the icon
-mkdir -p ~/.local/share/icons
-cp assets/icon.png ~/.local/share/icons/local-learn.png
+# Download the icon
+curl -L -o ~/.local/share/icons/local-learn.png https://raw.githubusercontent.com/AdityaHebballe/Local-Learn/main/assets/icon.png
 
 # Create the .desktop file
 mkdir -p ~/.local/share/applications
