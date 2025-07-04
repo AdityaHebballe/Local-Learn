@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Clone the repository
+git clone https://github.com/AdityaHebballe/Local-Learn.git
+cd Local-Learn
+
 # Get the latest release URL
 LATEST_RELEASE_URL=$(curl -s https://api.github.com/repos/AdityaHebballe/Local-Learn/releases/latest | grep "browser_download_url.*AppImage" | cut -d : -f 2,3 | tr -d \")
 
