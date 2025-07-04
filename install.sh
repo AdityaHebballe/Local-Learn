@@ -20,8 +20,8 @@ cat > ~/.local/share/applications/local-learn.desktop << EOL
 [Desktop Entry]
 Name=Local Learn
 Comment=Watch your local course files in a Udemy-like interface.
-Exec=~/.local/bin/local-learn
-Icon=~/.local/share/icons/local-learn.png
+Exec=$HOME/.local/bin/local-learn
+Icon=$HOME/.local/share/icons/local-learn.png
 Terminal=false
 Type=Application
 Categories=Education;
