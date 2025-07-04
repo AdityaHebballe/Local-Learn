@@ -36,3 +36,11 @@ This will create a distributable file in the `dist` directory.
 ## Running the Application
 
 Once you have built the application, you can run it by double-clicking the executable in the `dist` directory.
+
+### Linux Installation
+
+For a better experience on Linux, you can run the `install.sh` script to install the application and add it to your application menu.
+
+```bash
+./install.sh
+```

@@ -22,6 +22,9 @@
     ],
     "directories": {
       "buildResources": "assets"
+    },
+    "linux": {
+      "category": "Education"
     }
   },
   "keywords": [],
